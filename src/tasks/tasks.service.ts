@@ -1,11 +1,12 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { Task, TaskStatus } from './task.model';
+import { TaskStatus } from './task.status.enum';
 import { CreateTaskDto } from './dto/create-task.dto';
-import { v4 as uuid } from 'uuid'
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 
 @Injectable()
 export class TasksService {
+
+    /*
     //store tasks in memory
     private tasks: Task[] = []
 
@@ -82,7 +83,6 @@ export class TasksService {
         task.status = status;
         return task;
     }
-
-    // search and filter tasks
+    */
     
 }

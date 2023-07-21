@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, Param, Patch, Post, Put, Query } from '@nestjs/common';
 import { TasksService } from './tasks.service';
-import { Task, TaskStatus } from './task.model';
+import { TaskStatus } from './task.status.enum';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 import { UpdateTaskStatusDto } from './dto/update-task-status.dto';
@@ -9,6 +9,7 @@ import { UpdateTaskStatusDto } from './dto/update-task-status.dto';
 export class TasksController {
     constructor(private tasksService: TasksService) {}
 
+    /*
     // retreiving all tasks from the service
     // @Get()
     // getAllTasks(): Task[] {
@@ -61,6 +62,7 @@ export class TasksController {
     ): Task {
         const { status } = UpdateTaskStatusDto
         return this.tasksService.updateTaskStatus(id, status)
-    }
+    } 
+    */
 
 }
