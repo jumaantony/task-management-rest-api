@@ -7,13 +7,14 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     TasksModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'db.sngygzwqmaqmnmcjvgys.supabase.co',
       port: 5432,
-      username: 'nestuser',
-      password: 'nestuser',
-      database: 'nestdb',
+      username: 'postgres',
+      password: 'Accessdenied@2023',
+      database: 'postgres',
       autoLoadEntities: true, // this will load all entities in the entities folder
       synchronize: true, // this will automatically create tables in the database
+      
     })],
   controllers: [],
   providers: [],
